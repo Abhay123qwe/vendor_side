@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Complaint Details</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #e4e6eb;
+    color: #000000;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: #ecedef;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* SECTION */
+.section {
+    background: #ecedef;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section h3 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #0b0b0b;
+    padding-bottom: 10px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+}
+
+/* FIELD */
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 13px;
+    color: #9aa0a6;
+    margin-bottom: 5px;
+}
+
+.value {
+    font-size: 15px;
+}
+
+/* BOX */
+.box {
+    background: #ecedef;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+/* IMAGE */
+.image-box img {
+    width: 140px;
+    border-radius: 8px;
+}
+
+/* FILE */
+.file {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div>Complaint Management Owner</div>
+        <div>Radhika Yadav</div>
+    </div>
+
+    <!-- MAIN INFO -->
+    <div class="section">
+        <h3>Complaint Management Information</h3>
+
+        <div class="grid">
+
+            <div class="field"><div class="label">Complaint Management Name</div><div class="value">CC0068</div></div>
+            <div class="field"><div class="label">Complaint Management Owner</div><div class="value">Radhika Yadav</div></div>
+
+            <div class="field"><div class="label">Customer Name</div><div class="value">Mayur Tarkhala</div></div>
+            <div class="field"><div class="label">Customer Type</div><div class="value">B2C</div></div>
+
+            <div class="field"><div class="label">Mobile No</div><div class="value">9998522110</div></div>
+            <div class="field"><div class="label">Order ID</div><div class="value">NP2026034934</div></div>
+
+            <div class="field"><div class="label">Order Type</div><div class="value">Online</div></div>
+            <div class="field"><div class="label">Order Date</div><div class="value">Mar 30, 2026</div></div>
+
+            <div class="field"><div class="label">Order/Part Name</div><div class="value">Dicky Chrome garnish</div></div>
+            <div class="field"><div class="label">Make</div><div class="value">honda</div></div>
+
+            <div class="field"><div class="label">Model</div><div class="value">city</div></div>
+            <div class="field"><div class="label">Part No</div><div class="value">AGHC45CA</div></div>
+
+            <div class="field"><div class="label">Created By</div><div class="value">Radhika Yadav<br>Thu, 9 Apr 2026 17:52</div></div>
+
+            <div class="field">
+                <div class="label">Customer Issue Reported</div>
+                <div class="box">
+                    The customer reported that the Dickey Garnish was received in a damaged and broken condition...
+                </div>
+            </div>
+
+            <div class="field image-box">
+                <div class="label">Defective Part Photo</div>
+                <img src="data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAAAAAAD...">
+            </div>
+
+            <div class="field">
+                <div class="label">Order Invoice</div>
+                <div class="file">NP2026034934-5484.pdf (14 KB)</div>
+            </div>
+
+            <div class="field"><div class="label">Complaint Date</div><div class="value">Apr 9, 2026 17:00</div></div>
+
+            <div class="field"><div class="label">Problem Category</div><div class="value">Part Broken</div></div>
+            <div class="field"><div class="label">Root Cause Status</div><div class="value">Complaint Registered</div></div>
+
+        </div>
+    </div>
+
+    <!-- ROOT CAUSE -->
+    <div class="section">
+        <h3>Root Cause & Resolution</h3>
+
+        <div class="grid">
+
+            <div class="field">
+                <div class="label">Root Cause Statement</div>
+                <div class="box">Damage due to poor packaging...</div>
+            </div>
+
+            <div class="field">
+                <div class="label">Corrective Action</div>
+                <div class="box">Strict packaging guidelines implemented...</div>
+            </div>
+
+            <div class="field">
+                <div class="label">Resolution for Customer</div>
+                <div class="box">Replacement/refund initiated...</div>
+            </div>
+
+            <div class="field"><div class="label">Resolution Target Date</div><div class="value">Apr 13, 2026</div></div>
+
+            <div class="field"><div class="label">Failure Cost</div><div class="value">₹ 1,334.00</div></div>
+
+            <div class="field">
+                <div class="label">Failure Cost Breakup</div>
+                <div class="box">Product + shipping + logistics</div>
+            </div>
+
+            <div class="field"><div class="label">Failure Cost Responsibility</div><div class="value">Recovered from Seller</div></div>
+
+        </div>
+    </div>
+
+    <!-- SELLER -->
+    <div class="section">
+        <h3>Seller Details</h3>
+
+        <div class="grid">
+
+            <div class="field"><div class="label">Currency</div><div class="value">INR</div></div>
+            <div class="field"><div class="label">Who is at Fault</div><div class="value">Seller</div></div>
+
+            <div class="field"><div class="label">Exchange Rate</div><div class="value">1</div></div>
+            <div class="field"><div class="label">Seller Name</div><div class="value">Jai Hind</div></div>
+
+            <div class="field"><div class="label">Complaint Status</div><div class="value">Open</div></div>
+
+        </div>
+    </div>
+
+    <!-- LOG -->
+    <div class="section">
+        <h3>Complaint Log and Status</h3>
+
+        <div class="grid">
+
+            <div class="field">
+                <div class="label">Customer Communication</div>
+                <div class="value">
+                    Customer reported damaged product.
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="label">Tracking Date</div>
+                <div class="value">Apr 9, 2026</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

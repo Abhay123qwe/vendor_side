@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complaint Dashboard</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #e5e7eb;
+        color: #000000;
+    }
+
+    .container {
+        padding: 20px;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        min-width: 1600px;
+        border-collapse: collapse;
+        background:#ecedef ;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    td {
+        padding: 12px 15px;
+        text-align: left;
+        white-space: nowrap;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    th {
+        padding: 12px 15px;
+        text-align: left;
+        white-space: nowrap;
+        font-size: 18px;
+        font-weight: 600;
+        color: #2264d7;
+        border-bottom: 1px solid #374151;
+    }
+
+    td {
+        font-size: 13px;
+        border-bottom: 1px solid #1f2937;
+    }
+
+    tr:hover {
+        background: #cbd6e7;
+    }
+
+    .active-row {
+        background: #8796bd !important;
+    }
+
+    .status {
+        color: #22c55e;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<table>
+    <thead>
+        <tr>
+            <!-- First Table -->
+            <th>Status</th>
+            <th>Complaint No</th>
+            <th>Model</th>
+            <th>Order ID</th>
+            <th>Customer Name</th>
+
+            <!-- Second Table -->
+            <th>Problem</th>
+            <th>Root Cause</th>
+            <th>Responsibility</th>
+            <th>Cost</th>
+
+            <!-- Third Table -->
+            <th>Seller</th>
+            <th>Part Name</th>
+            <th>Manager</th>
+            <th>Created Time</th>
+
+            <!-- Fourth Table -->
+            <th>Created By</th>
+            <th>Order Date</th>
+            <th>Complaint Date</th>
+
+            <!-- Fifth Table -->
+            <!-- <th> Seller </th> -->
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr onclick="window.location.href='details.html'" style="cursor: pointer;">
+            <td class="status">Open</td>
+            <td>CC0069</td>
+            <td>GRANDE PUNTO</td>
+            <td>NP2026034683</td>
+            <td>Swatantra Mishra</td>
+
+            <td>Part Broken</td>
+            <td>Complaint Registered</td>
+            <td>Recovered from Seller</td>
+            <td>₹1,147</td>
+
+            <td>WORTECH ENGINEERS</td>
+            <td>COOLANT TANK</td>
+            <td>Radhika Yadav</td>
+            <td>Apr 11, 2026</td>
+
+            <td>Radhika Yadav</td>
+            <td>Mar 18, 2026</td>
+            <td>Apr 11, 2026</td>
+            
+        </tr>
+
+        <tr onclick="window.location.href='details.html'" style="cursor: pointer;">
+            <td class="status">Open</td>
+            <td>CC0068</td>
+            <td>City</td>
+            <td>NP2026034934</td>
+            <td>Mayur Tarkhala</td>
+
+            <td>Part Broken</td>
+            <td>Complaint Registered</td>
+            <td>Recovered from Seller</td>
+            <td>₹1,334</td>
+
+            <td>Jai Hind</td>
+            <td>Dicky Chrome</td>
+            <td>Radhika Yadav</td>
+            <td>Apr 9, 2026</td>
+
+            <td>Radhika Yadav</td>
+            <td>Mar 30, 2026</td>
+            <td>Apr 9, 2026</td>
+        </tr>
+
+        <tr class="active-row" onclick="window.location.href='details.html'" style="cursor: pointer;">
+            <td class="status">Open</td>
+            <td>CC0067</td>
+            <td>i20</td>
+            <td>NP2026034389</td>
+            <td>Nimit Sanandia</td>
+
+            <td>Part Not Working</td>
+            <td>Complaint Registered</td>
+            <td>Recovered from Seller</td>
+            <td>₹2,614</td>
+
+            <td>Wortech</td>
+            <td>Display Assy</td>
+            <td>Radhika Yadav</td>
+            <td>Apr 3, 2026</td>
+
+            <td>Radhika Yadav</td>
+            <td>Mar 18, 2026</td>
+            <td>Apr 11, 2026</td>
+        </tr>
+
+    </tbody>
+</table>
+
+</div>
+
+</body>
+</html>
